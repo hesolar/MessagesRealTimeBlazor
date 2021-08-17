@@ -1,0 +1,13 @@
+﻿@inherits Index2Base
+<h1>Messaging Page</h1>
+
+
+<input type="text" placeholder="Enter your message" @bind="newMsg" />
+<button @onclick="sendMessage">Send</button>
+
+Msgs:
+@foreach( String msg in Mensajes ) {
+    <br>
+    <input type="text" disabled value="@msg" />
+}
+
